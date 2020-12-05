@@ -2,7 +2,6 @@
 
 import re
 
-lines = []
 with open("./input4.txt") as file:
     input = file.read()
     input = input.strip()                               # remove \n
