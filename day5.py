@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 with open("./input5.txt") as file:
     input = file.read().splitlines()
@@ -25,7 +25,7 @@ def solve_1():
     for line in input:
         seat = boarding_pass_to_decimal(line)
         highest = max([highest, seat])
-    print(highest)
+    print(f'a) Highest seat {highest}')
 
 
 def solve_2():
@@ -36,8 +36,7 @@ def solve_2():
     
     for i in range(128*8):
         if ((i not in taken_seats) and (i-1 in taken_seats) and (i+1 in taken_seats)):
-            print(i)
+            print(f'b) Free seat {i}')
 
-if __name__ == "__main__":
-    solve_1()
-    solve_2()
+solve_1()
+solve_2()
