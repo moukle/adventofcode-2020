@@ -48,7 +48,7 @@ def solve_2():
             valid_hcl(dict['hcl']),
             valid_pid(dict['pid'])
             ])
-    print(valid_count)
+        print(valid_count)
 
 solve_1()
 solve_2()
